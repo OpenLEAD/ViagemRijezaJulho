@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Mon Jul 13 13:02:23 BRT 2015
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=main.tex
+outputFile=ViagemJulho.pdf
+langSpell=en
+markDer=true
+srcDir=

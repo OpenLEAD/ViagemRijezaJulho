@@ -1,0 +1,193 @@
+%-----------------------------------------------------------------------
+%
+%   UFRJ  - Universidade Federal do Rio de Janeiro
+%   COPPE - Coordenação dos Programas de Pós-graduação em Engenharia
+%   PEE   - Programa de Engenharia Elétrica
+%
+%
+%   Projeto EMMA - 
+%
+%                                                        10/jul/15, Rio
+%                                                        Ramon R. Costa
+%----------------------------------------------------------------------
+%
+%  Compilar usando PDFLaTeX
+%
+%----------------------------------------------------------------------
+\documentclass[12pt,a4paper]{article}
+\usepackage{macros/ROSApackages} 
+
+\input{macros/ROSAsettings}
+\input{macros/ROSAmacros}
+
+%\def\PATH{file:c:/Users/Ramon/My Documents/projetos/2015/Projeto EMMA}
+
+\begin{document}
+%---------------------------------------------------------------------
+\include{00_Frontpage}
+
+%---------------------------------------------------------------------
+%\tableofcontents
+
+\newpage%
+%---------------------------------------------------------------------
+\section{Identificação}
+
+\input{identificacao/identificacao}
+
+\newpage%
+%---------------------------------------------------------------------
+\section{Sobre a visita}
+Foram dois dias de visita à Rijeza, 08 e 09 de Julho de 2015:
+
+Dia 08/07/2015:
+\begin{itemize}
+  \item Apresentação realizada por Ramon/Renan: requisitos do processo HVOF,
+  restrições do ambiente e soluções conceituais para os três acessos da turbina de
+  Jirau. A solução conceitual pelo acesso superior foi a mais elaborada até
+  o momento.
+  \item Apresentação realizada pela Rijeza: requisitos do processo HVOF,
+  cavitação e erosão das pás de Jirau, soluções para exaustão do processo e
+  instalação dos componentes.
+\end{itemize}
+
+Dia 09/07/2015:
+\begin{itemize}
+  \item Visita às instalações e aplicação de hardcoating.
+  \item Reunião para resumo, feedback e próximos passos.
+\end{itemize}
+
+%---------------------------------------------------------------------
+\section{Informações}
+
+\subsection{Sobre Jirau}
+
+\begin{itemize}
+  \item Todas as turbinas de Jirau têm uma escotilha superior semelhante. Éder
+  fará a verificação do diâmetro da escotilha superior na turbina chinesa e providenciará os desenhos.
+
+  \item A estrutura do andaime pode ser soldada dentro do aro-câmera. Esse é um procedimento usual.
+  
+  \item O distribuidor pode ser aberto durante a manutenção da turbina. Isso é
+  importante para a solução de exaustão.
+  
+  \item Para evitar o problema ambiental causado pelos peixes que invadem o
+  túnel durante as paradas, a comporta vagão é fechada juntamente com o
+  distribuidor. Isso cria uma correnteza durante o fechamento que impede a
+  entrada dos peixes. Com essa nova informação, a opção de acesso pela
+  jusante deve ser abandonada, devido à correnteza durante o procedimento de
+  fechamento da comporta vagão.
+  
+  \item São 30 dias para desmontar a turbina e 30 dias para a montagem.
+  
+  \item A pá só pode ser girada antes do desligamento da máquina. Após uma
+  angulação ser escolhida, deveremos trabalhar com ela até o final.
+
+\end{itemize}
+
+\subsection{Sobre o processo de revestimento}
+
+\begin{itemize}  
+  \item Para revestir uma turbina completa são necessários cerca de 500\,Kg de
+  pó metálico. O rendimento do processo de revestimento é de 50\%. Isto é, 250\,Kg de pó metálico serão perdidos.
+  
+  \item A potência gerada pelo processo é de cerca de 1.5\,MW ($\approx$ 2.000\,HP).
+   
+  \item A ventilação necessária para a refrigeração é bem grande.
+  
+  \item As pistolas que existem no mercado possuem praticamente o mesmo peso.
+   
+  \item A RIJEZA planejava utilizar a escotilha superior para a exaustão de ar.
+Éder sugeriu abrir o distribuidor para a ventilação. Existe uma outra escotilha
+do outro lado.
+
+  \item A RIJEZA avaliou a perda de carga se o equipamento for instalado abaixo
+  da turbina devido ao grande comprimento das mangueiras e cabos, e a altura.
+
+  \item A RIJEZA achou boa a opção de acesso pela escotilha superior. Isso resolve o problema da perda de carga.
+
+  \item Esclarecida a dúvida sobre a precisão necessária/possível. O mecanismo
+  não será tão preciso quanto o manipulador. A diferença de uma trajetória para
+  a outra é de 3\,mm.
+
+  \item Sugestão: Checar o software SprutCAM para a simulação de cinemática.
+
+  \item Sugestão: Checar o sistema laser vision ARC-EYE. Pode ser uma opção para
+  a calibração e identificação de bordas.
+
+  \item Ideia alternativa para o shutter: utilizar um switch para desviar o pó.
+  
+  \item Ideia: projetar um container com todo o equipamento. O container deve se
+  apoiar sobre o aro câmera sem interferir no acesso já instalado.
+
+  \item Ambiente: os resíduos podem ser abandonados? Questão a ser investigada.
+
+  \item Ideia: a turbina poderia ser lavada ao final do procedimento de
+  revestimento e haver algum tipo de separação entre a água e o pó, que
+  decanta.
+
+  \item Segurança: raio mínimo de curvatura das mangueiras deve ser observado.
+  Cuidado para não quebrar o conector.
+
+  \item Segurança: será necessário projetar um mecanismo para acender a tocha
+  remotamente.
+
+  \item A RIJEZA utiliza robôs da ABB. A assitência técnica é rápida. Considerar
+  a utilização de robôs da ABB no caso de acesso pela escotilha inferior.
+
+  \item Existe um processo de revestimento que usa querosene. É mais complexo e
+  consome mais energia para refrigeração. Possivelmente, não deve valer a pena.
+
+\end{itemize}
+
+\subsection{Algumas conclusões}
+
+\begin{itemize}
+  \item Abandonar a opção de acesso pela jusante.
+
+  \item Solução convergindo para usar um manipulador de pequeno porte e um procedimento de revestimento por fases.
+
+  \item Tendência: focar na opção de acesso pela escotilha superior. Verificar
+  acesso dos cabos com passagem por dentro da base móvel da escotilha superior.
+  
+  \item Abrir o distribuidor para auxiliar a ventilação.
+
+  \item A logística para a movimentação é um ponto chave. É um ponto favoravel
+  importante a ser considerado na avaliação do acesso pela escotilha superior.
+
+\end{itemize}
+
+
+\subsection{Próximos passos}
+
+\begin{itemize}
+  \item Avancar com o conceito do acesso inferior. Redirecionar o Gabriel.
+
+  \item Estudar com mais detalhes o uso do robô pequeno com um processo de revestimento em fases.
+
+  \item Estudar o problema de aceleração e desaceleração do robô.
+  
+  \item Estudar o problema do sincronismo.
+
+  \item Estudar o problema da calibração.
+
+  \item Falar com o Toni sobre o problema de calibração e simulação dinâmica.
+
+\end{itemize}
+
+
+
+
+\vspace{20mm}%
+\parbox[t]{70mm}{
+  \centering
+  \includegraphics[width=65mm]{assinatura/assinatura-digital.jpg} \\[-4mm]
+  \rule[2mm]{70mm}{0.1mm} \\
+  \ramon \\[1mm]
+  Coordenador do Projeto \\
+}
+
+
+
+%---------------------------------------------------------------------
+\end{document}
